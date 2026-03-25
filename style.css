@@ -116,14 +116,14 @@ body {
 }
 
 .letter-m { left: 5px;  color: #000; z-index: 5; transition: color 0.4s ease; }
-.letter-v  { left: 30%; z-index: 4; }
-.letter-s1 { left: 53%; z-index: 3; }
+.letter-v  { left: 35%; z-index: 4; }
+.letter-s1 { left: 57%; z-index: 3; }
 .letter-f  { left: 60%; color: #000; z-index: 2; transition: color 0.4s ease; }
-.letter-s2 { left: 73%; z-index: 1; }
+.letter-s2 { left: 68%; z-index: 1; }
 
 .letter-outlined {
   color: transparent;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 2px #777;
   opacity: 0;
   transition: opacity 0.4s ease, -webkit-text-stroke-color 0.4s ease;
 }

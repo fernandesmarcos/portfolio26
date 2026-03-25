@@ -52,5 +52,12 @@ contactNav.addEventListener('mouseleave', () => {
   letterF.textContent = 'F';
 });
 
-bioLink.addEventListener('mouseenter', () => monogram.classList.add('show-initials'));
-bioLink.addEventListener('mouseleave', () => monogram.classList.remove('show-initials'));
+bioLink.addEventListener('mouseenter', () => {
+  monogram.classList.add('show-initials');
+  page.classList.add('is-hovering', 'bio-hovering');
+});
+bioLink.addEventListener('mouseleave', () => {
+  monogram.classList.remove('show-initials');
+  page.classList.remove('is-hovering', 'bio-hovering');
+});
+

@@ -4,6 +4,9 @@ const letterF = document.querySelector('.letter-f');
 const links = document.querySelectorAll('.clients a[data-image]');
 const nav = document.querySelector('.clients');
 
+// Preload all project images
+links.forEach(link => new Image().src = link.dataset.image);
+
 links.forEach(link => {
   link.addEventListener('mouseenter', () => {
     bg.style.backgroundImage = `url('${link.dataset.image}')`;

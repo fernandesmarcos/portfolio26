@@ -15,12 +15,29 @@ body {
   overflow: hidden;
 }
 
+/* ── Background image ── */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bg.visible {
+  opacity: 1;
+}
+
 /* ── Page layout ── */
 .page {
   height: 100vh;
   padding: 16px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* ── Header ── */
@@ -38,11 +55,13 @@ body {
   font-weight: 700;
   line-height: 1.45;
   max-width: 110px;
+  transition: color 0.4s ease;
 }
 
 .bio a {
   color: #000;
   text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 .bio a:hover {
@@ -70,29 +89,13 @@ body {
   text-decoration: none;
   line-height: 1.55;
   display: block;
+  transition: color 0.4s ease;
 }
 
 .clients ul li a:hover,
 .contact ul li a:hover {
   text-decoration: underline;
 }
-
-/* ── Background image ── */
-.bg {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-.bg.visible {
-  opacity: 1;
-}
-
 
 /* ── Monogram ── */
 .monogram {
@@ -113,6 +116,16 @@ body {
   color: #000;
   display: block;
   line-height: 0.82;
+  transition: color 0.4s ease;
+}
+
+/* ── Hover state: white UI ── */
+.page.is-hovering .bio p,
+.page.is-hovering .bio a,
+.page.is-hovering .clients ul li a,
+.page.is-hovering .contact ul li a,
+.page.is-hovering .monogram span {
+  color: #fff;
 }
 
 /* ── Mobile ── */

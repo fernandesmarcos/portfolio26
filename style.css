@@ -77,6 +77,23 @@ body {
   text-decoration: underline;
 }
 
+/* ── Background image ── */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bg.visible {
+  opacity: 1;
+}
+
+
 /* ── Monogram ── */
 .monogram {
   position: absolute;

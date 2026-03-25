@@ -183,16 +183,15 @@ body {
     line-height: 1.45;
   }
 
-  .monogram {
-    position: relative;
-    display: flex;
-    margin-top: 80px;
-  }
+ .monogram {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 
-  .letter-m,
-  .letter-f {
-    position: static;
-    font-size: 46vw;
-    transform: none;
+.letter-m,
+.letter-f {
+  position: absolute;
+  bottom: 5px;
   }
 }

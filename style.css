@@ -34,7 +34,7 @@ body {
 /* ── Page layout ── */
 .page {
   height: 100vh;
-  padding: 16px;
+  padding: 5px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -104,21 +104,28 @@ body {
 /* ── Monogram ── */
 .monogram {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  line-height: 0.82;
-  overflow: hidden;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: visible;
 }
 
-.monogram span {
+.letter-m {
+  grid-column: 1;
   font-size: 43vw;
   font-weight: 900;
   color: #000;
-  display: block;
+  line-height: 0.82;
+  transition: color 0.4s ease;
+}
+
+.letter-f {
+  grid-column: 3;
+  font-size: 43vw;
+  font-weight: 900;
+  color: #000;
   line-height: 0.82;
   transition: color 0.4s ease;
 }
@@ -127,8 +134,12 @@ body {
 .page.is-hovering .bio p,
 .page.is-hovering .bio a,
 .page.is-hovering .clients ul li a,
-.page.is-hovering .contact ul li a,
-.page.is-hovering .monogram span {
+.page.is-hovering .contact ul li a {
+  color: #fff;
+}
+
+.page.is-hovering .letter-m,
+.page.is-hovering .letter-f {
   color: #fff;
 }
 
@@ -141,7 +152,7 @@ body {
   .page {
     height: auto;
     min-height: 100vh;
-    padding: 24px 20px 0;
+    padding: 5px 5px 0;
     display: flex;
     flex-direction: column;
   }
@@ -178,11 +189,16 @@ body {
 
   .monogram {
     position: relative;
+    display: flex;
     margin-top: 80px;
-    justify-content: flex-start;
   }
 
-  .monogram span {
+  .letter-m,
+  .letter-f {
     font-size: 46vw;
+  }
+
+  .letter-f {
+    grid-column: auto;
   }
 }

@@ -92,7 +92,8 @@ body {
   text-decoration: none;
   line-height: 116%;
   letter-spacing: -0.36px;
-  display: inline-block;
+  display: block;
+  width: fit-content;
   transition: color 0.4s ease;
 }
 

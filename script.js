@@ -38,7 +38,9 @@ clientsNav.addEventListener('mouseleave', () => {
 
 contactLinks.forEach(link => {
   link.addEventListener('mouseenter', () => {
-    page.classList.add('is-hovering');
+    bg.classList.remove('visible');
+    page.classList.remove('is-hovering');
+    isHovering = false;
     letterF.textContent = link.textContent.trim()[0];
   });
 });

@@ -25,7 +25,6 @@ links.forEach(link => {
       bg.classList.add('visible');
       isHovering = true;
     }
-
     page.classList.add('is-hovering');
     letterF.textContent = link.textContent.trim()[0];
   });
@@ -60,4 +59,3 @@ bioLink.addEventListener('mouseleave', () => {
   monogram.classList.remove('show-initials');
   page.classList.remove('is-hovering', 'bio-hovering');
 });
-

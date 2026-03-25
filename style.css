@@ -1,0 +1,154 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+/* ── Page layout ── */
+.page {
+  height: 100vh;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bio {
+  grid-column: 1;
+}
+
+.bio p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+  max-width: 110px;
+}
+
+.bio a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bio a:hover {
+  text-decoration: underline;
+}
+
+.clients {
+  grid-column: 3;
+}
+
+.contact {
+  grid-column: 4;
+}
+
+.clients ul,
+.contact ul {
+  list-style: none;
+}
+
+.clients ul li a,
+.contact ul li a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  line-height: 1.55;
+  display: block;
+}
+
+.clients ul li a:hover,
+.contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ── Monogram ── */
+.monogram {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 0.82;
+  overflow: hidden;
+}
+
+.monogram span {
+  font-size: 43vw;
+  font-weight: 900;
+  color: #000;
+  display: block;
+  line-height: 0.82;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .page {
+    height: auto;
+    min-height: 100vh;
+    padding: 24px 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 48px;
+    padding-top: 40px;
+  }
+
+  .bio {
+    grid-column: 1 / -1;
+  }
+
+  .bio p {
+    font-size: 22px;
+    line-height: 1.35;
+    max-width: 260px;
+  }
+
+  .clients {
+    grid-column: 1;
+  }
+
+  .contact {
+    grid-column: 2;
+  }
+
+  .clients ul li a,
+  .contact ul li a {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .monogram {
+    position: relative;
+    margin-top: 80px;
+    justify-content: flex-start;
+  }
+
+  .monogram span {
+    font-size: 46vw;
+  }
+}

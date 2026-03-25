@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   color: #000;
   overflow: hidden;
@@ -51,9 +51,11 @@ body {
 }
 
 .bio p {
-  font-size: 13px;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 116%;
+  letter-spacing: -0.36px;
   max-width: 110px;
   transition: color 0.4s ease;
 }
@@ -83,11 +85,13 @@ body {
 
 .clients ul li a,
 .contact ul li a {
-  font-size: 13px;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 700;
   color: #000;
   text-decoration: none;
-  line-height: 1.55;
+  line-height: 116%;
+  letter-spacing: -0.36px;
   display: block;
   transition: color 0.4s ease;
 }

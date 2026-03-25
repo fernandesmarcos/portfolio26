@@ -109,16 +109,17 @@ body {
   position: absolute;
   bottom: 5px;
   font-size: 43vw;
-  font-weight: 900;
-  line-height: 0.82;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
   transform: translateX(-2.5vw);
 }
 
 .letter-m { left: 5px;  color: #000; z-index: 5; transition: color 0.4s ease; }
-.letter-v  { left: 25%; z-index: 4; }
-.letter-s1 { left: 45%; z-index: 3; }
+.letter-v  { left: 30%; z-index: 4; }
+.letter-s1 { left: 53%; z-index: 3; }
 .letter-f  { left: 60%; color: #000; z-index: 2; transition: color 0.4s ease; }
-.letter-s2 { left: 80%; z-index: 1; }
+.letter-s2 { left: 73%; z-index: 1; }
 
 .letter-outlined {
   color: transparent;

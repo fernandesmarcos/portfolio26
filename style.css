@@ -43,7 +43,7 @@ body {
 /* ── Header ── */
 .header {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 3fr 1fr 1fr;
 }
 
 .bio {
@@ -66,16 +66,12 @@ body {
   transition: color 0.4s ease;
 }
 
-.bio a:hover {
-  text-decoration: underline;
-}
-
 .clients {
-  grid-column: 3;
+  grid-column: 2;
 }
 
 .contact {
-  grid-column: 4;
+  grid-column: 3;
 }
 
 .clients ul,
@@ -97,37 +93,41 @@ body {
   transition: color 0.4s ease;
 }
 
-.clients ul li a:hover,
-.contact ul li a:hover {
-  text-decoration: underline;
-}
-
 /* ── Monogram ── */
 .monogram {
   position: absolute;
   inset: 0;
-  bottom: 5px;
   pointer-events: none;
 }
 
 .letter-m,
-.letter-f {
+.letter-v,
+.letter-s1,
+.letter-f,
+.letter-s2 {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   font-size: 43vw;
   font-weight: 900;
-  color: #000;
   line-height: 0.82;
-  transition: color 0.4s ease;
   transform: translateX(-2.5vw);
 }
 
-.letter-m {
-  left: 5px;
+.letter-m { left: 5px;  color: #000; z-index: 5; transition: color 0.4s ease; }
+.letter-v  { left: 20%; z-index: 4; }
+.letter-s1 { left: 40%; z-index: 3; }
+.letter-f  { left: 60%; color: #000; z-index: 2; transition: color 0.4s ease; }
+.letter-s2 { left: 80%; z-index: 1; }
+
+.letter-outlined {
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.letter-f {
-  left: 50%;
+.monogram.show-initials .letter-outlined {
+  opacity: 1;
 }
 
 /* ── Hover state: white UI ── */
@@ -184,15 +184,20 @@ body {
     line-height: 1.45;
   }
 
- .monogram {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
+  .monogram {
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+  }
 
-.letter-m,
-.letter-f {
-  position: absolute;
-  bottom: 5px;
+  .letter-m,
+  .letter-f {
+    position: static;
+    font-size: 46vw;
+    transform: none;
+  }
+
+  .letter-outlined {
+    display: none;
   }
 }

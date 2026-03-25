@@ -5,6 +5,8 @@ const links = document.querySelectorAll('.clients a[data-image]');
 const clientsNav = document.querySelector('.clients');
 const contactLinks = document.querySelectorAll('.contact a');
 const contactNav = document.querySelector('.contact');
+const monogram = document.querySelector('.monogram');
+const bioLink = document.querySelector('.bio a');
 
 // Preload all project images
 links.forEach(link => new Image().src = link.dataset.image);
@@ -49,3 +51,6 @@ contactNav.addEventListener('mouseleave', () => {
   page.classList.remove('is-hovering');
   letterF.textContent = 'F';
 });
+
+bioLink.addEventListener('mouseenter', () => monogram.classList.add('show-initials'));
+bioLink.addEventListener('mouseleave', () => monogram.classList.remove('show-initials'));

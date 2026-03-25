@@ -104,40 +104,36 @@ body {
 /* ── Monogram ── */
 .monogram {
   position: absolute;
+  inset: 0;
   bottom: 5px;
-  left: 5px;
-  right: 5px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  overflow: visible;
+  pointer-events: none;
+}
+
+.letter-m,
+.letter-f {
+  position: absolute;
+  bottom: 0;
+  font-size: 43vw;
+  font-weight: 900;
+  color: #000;
+  line-height: 0.82;
+  transition: color 0.4s ease;
+  transform: translateX(-2.5vw);
 }
 
 .letter-m {
-  grid-column: 1;
-  font-size: 43vw;
-  font-weight: 900;
-  color: #000;
-  line-height: 0.82;
-  transition: color 0.4s ease;
+  left: 5px;
 }
 
 .letter-f {
-  grid-column: 3;
-  font-size: 43vw;
-  font-weight: 900;
-  color: #000;
-  line-height: 0.82;
-  transition: color 0.4s ease;
+  left: 50%;
 }
 
 /* ── Hover state: white UI ── */
 .page.is-hovering .bio p,
 .page.is-hovering .bio a,
 .page.is-hovering .clients ul li a,
-.page.is-hovering .contact ul li a {
-  color: #fff;
-}
-
+.page.is-hovering .contact ul li a,
 .page.is-hovering .letter-m,
 .page.is-hovering .letter-f {
   color: #fff;
@@ -195,10 +191,8 @@ body {
 
   .letter-m,
   .letter-f {
+    position: static;
     font-size: 46vw;
-  }
-
-  .letter-f {
-    grid-column: auto;
+    transform: none;
   }
 }

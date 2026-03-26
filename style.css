@@ -34,7 +34,7 @@ body {
 /* ── Page layout ── */
 .page {
   height: 100vh;
-  padding: 5px;
+  padding: 10px 5px 5px 10px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -69,10 +69,12 @@ body {
 
 .clients {
   grid-column: 2;
+  padding-top: 10px;
 }
 
 .contact {
   grid-column: 3;
+  padding-top: 10px;
 }
 
 .clients ul,

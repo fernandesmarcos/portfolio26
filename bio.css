@@ -46,8 +46,8 @@ body {
   transform: translateX(-3.5vw);
 }
 
-.letter-m  { top: 0;    left: calc(5px + 1vw);    color: #fff; z-index: 5; view-transition-name: mono-m; }
-.letter-f  { top: 0;    left: calc(66.8% + 0vw);     color: #fff; z-index: 2; view-transition-name: mono-f; }
+.letter-m  { top: 10px;    left: calc(5px + 1vw);    color: #fff; z-index: 5; view-transition-name: mono-m; }
+.letter-f  { top: 10px;    left: calc(66.8% + 0vw);     color: #fff; z-index: 2; view-transition-name: mono-f; }
 .letter-v  { top: 28vw; left: calc(27.7% + 3.47vw);               z-index: 4; view-transition-name: mono-v; }
 .letter-s1 { top: 56vw; left: calc(46.1% + 3.89vw);               z-index: 3; view-transition-name: mono-s1; }
 .letter-s2 { top: 84vw; left: calc(72.2% + 0vw);                  z-index: 1; view-transition-name: mono-s2; }

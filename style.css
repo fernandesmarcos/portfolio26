@@ -121,7 +121,7 @@ body {
 .letter-v  { left: calc(27.7% + 3.47vw); z-index: 4; }
 .letter-s1 { left: calc(46.1% + 3.89vw); z-index: 3; }
 .letter-f  { left: calc(66.8% + 0vw);  color: #000; z-index: 2; transition: color 0.4s ease; }
-.letter-s2 { left: calc(72.2% + 0vw);  z-index: 1; }
+.letter-s2 { left: calc(72.2% + 3.47vw);  z-index: 1; }
 
 .letter-outlined {
   color: transparent;
@@ -136,6 +136,7 @@ body {
 
 .page.bio-hovering .letter-outlined {
   -webkit-text-stroke-color: 0.5px #777;
+  color: #000;
 }
 
 .page.bio-hovering {

@@ -65,7 +65,8 @@ body {
   z-index: 10;
   margin-top: 52vw;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+  padding-left: 0.69vw;
+  grid-template-columns: 24.65vw 1fr 1fr;
   animation: fadeIn 0.6s ease-out 0.4s both;
 }
 

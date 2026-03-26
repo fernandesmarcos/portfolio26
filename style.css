@@ -44,7 +44,7 @@ body {
 /* ── Header ── */
 .header {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr;
 }
 
 .bio {
@@ -94,6 +94,7 @@ body {
   transition: color 0.4s ease;
 }
 
+
 /* ── Monogram ── */
 .monogram {
   position: absolute;
@@ -107,20 +108,19 @@ body {
 .letter-f,
 .letter-s2 {
   position: absolute;
-  bottom: 5px;
+  bottom: -4px;
   font-size: 43vw;
   font-style: normal;
   font-weight: 500;
   line-height: 0.82;
-  transform: translateX(-1.5vw);
+  transform: translateX(-3.5vw);
 }
 
-.letter-m { left: 5px;   color: #000; z-index: 5; transition: color 0.4s ease; }
+.letter-m { left: calc(5px + 1vw); color: #000; z-index: 5; transition: color 0.4s ease; }
 .letter-v  { left: 27.7%; z-index: 4; }
 .letter-s1 { left: 46.1%; z-index: 3; }
 .letter-f  { left: 66.8%; color: #000; z-index: 2; transition: color 0.4s ease; }
 .letter-s2 { left: 72.2%; z-index: 1; }
-
 
 .letter-outlined {
   color: transparent;

@@ -115,11 +115,12 @@ body {
   transform: translateX(-1.5vw);
 }
 
-.letter-m { left: 5px;  color: #000; z-index: 5; transition: color 0.4s ease; }
-.letter-v  { left: 35%; z-index: 4; }
-.letter-s1 { left: 57%; z-index: 3; }
-.letter-f  { left: 60%; color: #000; z-index: 2; transition: color 0.4s ease; }
-.letter-s2 { left: 68%; z-index: 1; }
+.letter-m { left: 5px;   color: #000; z-index: 5; transition: color 0.4s ease; }
+.letter-v  { left: 27.7%; z-index: 4; }
+.letter-s1 { left: 46.1%; z-index: 3; }
+.letter-f  { left: 66.8%; color: #000; z-index: 2; transition: color 0.4s ease; }
+.letter-s2 { left: 72.2%; z-index: 1; }
+
 
 .letter-outlined {
   color: transparent;

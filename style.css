@@ -135,7 +135,7 @@ body {
 }
 
 .page.bio-hovering .letter-outlined {
-  -webkit-text-stroke-color: 1px #777;
+  -webkit-text-stroke-color: 0.5px #777;
 }
 
 .page.bio-hovering {

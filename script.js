@@ -16,15 +16,18 @@ let isHovering = false;
 links.forEach(link => {
   link.addEventListener('mouseenter', () => {
     if (isHovering) {
+      // Already hovering: swap image instantly (no fade blink)
       bg.style.transition = 'none';
       bg.style.backgroundImage = `url('${link.dataset.image}')`;
-      bg.offsetHeight;
+      bg.offsetHeight; // force repaint
       bg.style.transition = '';
     } else {
+      // First hover: fade in
       bg.style.backgroundImage = `url('${link.dataset.image}')`;
       bg.classList.add('visible');
       isHovering = true;
     }
+
     page.classList.add('is-hovering');
     letterF.textContent = link.textContent.trim()[0];
   });
@@ -58,4 +61,11 @@ bioLink.addEventListener('mouseenter', () => {
 bioLink.addEventListener('mouseleave', () => {
   monogram.classList.remove('show-initials');
   page.classList.remove('is-hovering', 'bio-hovering');
+});
+bioLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  monogram.style.transition = 'transform 0.5s ease-in, opacity 0.4s ease';
+  monogram.style.transform = 'translateY(-40vh)';
+  monogram.style.opacity = '0';
+  setTimeout(() => { window.location.href = bioLink.href; }, 500);
 });

@@ -205,18 +205,21 @@ body {
     line-height: 1.45;
   }
 
-  .monogram {
-    position: relative;
-    display: flex;
-    margin-top: auto;
-  }
+.monogram {
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  .letter-m,
-  .letter-f {
-    position: static;
-    font-size: 46vw;
-    transform: none;
-  }
+.letter-m,
+.letter-f {
+  position: static;
+  font-size: calc(50vw - 10px);
+  transform: none;
+  flex: 1;
+}
 
   .letter-outlined {
     display: none;

@@ -147,6 +147,10 @@ body {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
+.page.bio-hovering {
+  background: #000;
+}
+
 /* ── Hover state: white UI ── */
 .page.is-hovering .bio p,
 .page.is-hovering .bio a,

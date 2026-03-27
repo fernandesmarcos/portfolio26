@@ -133,10 +133,10 @@ body {
 .letter-s2 { left: calc(72.2% + 0vw);    z-index: 1; view-transition-name: mono-s2; }
 
 .letter-outlined {
-  color: #000;
-  -webkit-text-stroke: 1px #777;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
   opacity: 0;
-  transition: opacity 0.4s ease, -webkit-text-stroke-color 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 .monogram.show-initials .letter-outlined {
@@ -144,11 +144,7 @@ body {
 }
 
 .page.bio-hovering .letter-outlined {
-  color: transparent;
-}
-
-.page.bio-hovering {
-  background: #000;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
 /* ── Hover state: white UI ── */

@@ -19,14 +19,12 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Page ── */
 .page {
   position: relative;
   padding: 10px 5px 80px 10px;
   min-height: 140vw;
 }
 
-/* ── Monogram ── */
 .monogram {
   position: absolute;
   inset: 0;
@@ -46,11 +44,11 @@ body {
   transform: translateX(-3.5vw);
 }
 
-.letter-m  { top: calc(10px - 2.78vw);  left: calc(5px + 1vw);    color: #fff; z-index: 5; view-transition-name: mono-m; }
-.letter-f  { top: calc(10px - 2.78vw);  left: calc(66.8% + 0vw);     color: #fff; z-index: 2; view-transition-name: mono-f; }
-.letter-v  { top: 28vw; left: calc(27.7% + 3.47vw);               z-index: 4; view-transition-name: mono-v; }
-.letter-s1 { top: 56vw; left: calc(46.1% + 3.89vw);               z-index: 3; view-transition-name: mono-s1; }
-.letter-s2 { top: 84vw; left: calc(72.2% + 0vw);                  z-index: 1; view-transition-name: mono-s2; }
+.letter-m  { top: calc(10px - 2.78vw); left: calc(5px + 1vw);    color: #fff; z-index: 5; view-transition-name: mono-m; }
+.letter-f  { top: calc(10px - 2.78vw); left: calc(66.8% + 0vw);  color: #fff; z-index: 2; view-transition-name: mono-f; }
+.letter-v  { top: 28vw; left: calc(27.7% + 3.47vw); z-index: 4; view-transition-name: mono-v; }
+.letter-s1 { top: 56vw; left: calc(46.1% + 3.89vw); z-index: 3; view-transition-name: mono-s1; }
+.letter-s2 { top: 84vw; left: calc(72.2% + 0vw);    z-index: 1; view-transition-name: mono-s2; }
 
 .letter-v,
 .letter-s1,
@@ -59,14 +57,12 @@ body {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
-/* ── Bio content ── */
 .bio-content {
   position: relative;
   z-index: 10;
   margin-top: 52vw;
-  display: grid;
   padding-left: 0.69vw;
-  grid-template-columns: 24.65vw 1fr 1fr;
+  width: 49.3vw;
   animation: fadeIn 0.6s ease-out 0.4s both;
 }
 
@@ -75,11 +71,7 @@ body {
   to   { opacity: 1; }
 }
 
-.col-name { grid-column: 1; }
-.col-bio  { grid-column: 2; }
-
-.col-name p,
-.col-bio p {
+.bio-content p {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -89,7 +81,7 @@ body {
   max-width: 160px;
 }
 
-.col-bio p + p { margin-top: 16px; }
+.bio-content p + p { margin-top: 16px; }
 
 /* ── Mobile ── */
 @media (max-width: 768px) {
@@ -119,16 +111,13 @@ body {
 
   .bio-content {
     margin-top: 40px;
-    grid-template-columns: 1fr;
+    width: auto;
+    padding-left: 0;
     animation: none;
     opacity: 1;
   }
 
-  .col-name { grid-column: 1; margin-bottom: 32px; }
-  .col-bio  { grid-column: 1; }
-
-  .col-name p,
-  .col-bio p {
+  .bio-content p {
     font-size: 16px;
     max-width: none;
     line-height: 1.4;

@@ -63,7 +63,7 @@ body {
 }
 
 .bio p {
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 116%;
@@ -93,7 +93,7 @@ body {
 
 .clients ul li a,
 .contact ul li a {
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   color: #000;

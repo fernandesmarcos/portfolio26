@@ -186,7 +186,7 @@ body {
   }
 
   .bio p {
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.35;
     max-width: 260px;
   }
@@ -201,14 +201,14 @@ body {
 
   .clients ul li a,
   .contact ul li a {
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.45;
   }
 
   .monogram {
     position: relative;
     display: flex;
-    margin-top: 80px;
+    margin-top: auto;
   }
 
   .letter-m,
@@ -221,4 +221,6 @@ body {
   .letter-outlined {
     display: none;
   }
+}
+
 }

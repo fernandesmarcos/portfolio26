@@ -122,14 +122,22 @@ body {
     padding-bottom: 60px;
   }
 
-  .monogram {
-    position: relative;
-    display: block;
-    inset: auto;
-  }
+.monogram {
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  .letter-m,
-  .letter-v,
+.letter-m,
+.letter-f {
+  position: static;
+  font-size: calc(50vw - 10px);
+  transform: none;
+  flex: 1;
+}
+
   .letter-s1,
   .letter-f,
   .letter-s2 {

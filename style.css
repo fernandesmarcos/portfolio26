@@ -170,15 +170,15 @@ body {
   .page {
     height: auto;
     min-height: 100vh;
-    padding: 5px 5px 0;
+    padding: 50px 10px 10px 10px;
     display: flex;
     flex-direction: column;
   }
 
   .header {
     grid-template-columns: 1fr 1fr;
-    row-gap: 48px;
-    padding-top: 40px;
+    row-gap: 200px;
+    padding-top: 0;
   }
 
   .bio {
@@ -205,21 +205,19 @@ body {
     line-height: 1.45;
   }
 
-.monogram {
-  position: relative;
-  display: flex;
-  margin-top: auto;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  .monogram {
+    position: relative;
+    display: flex;
+    margin-top: auto;
+  }
 
-.letter-m,
-.letter-f {
-  position: static;
-  font-size: calc(50vw - 10px);
-  transform: none;
-  flex: 1;
-}
+  .letter-m,
+  .letter-f {
+    position: static;
+    font-size: 49vw;
+    transform: none;
+    flex: 1;
+  }
 
   .letter-outlined {
     display: none;

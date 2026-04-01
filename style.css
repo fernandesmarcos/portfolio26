@@ -188,7 +188,7 @@ body {
   .bio p {
     font-size: 14px;
     line-height: 1.35;
-    max-width: 260px;
+    max-width: 80px;
   }
 
   .clients {
@@ -210,6 +210,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    margin-left: -8px;
+    margin-right: -16px;
   }
 
   .letter-m,
@@ -224,4 +226,3 @@ body {
   }
 }
 
-}

@@ -208,15 +208,15 @@ body {
   .monogram {
     position: relative;
     display: flex;
+    justify-content: space-between;
     margin-top: auto;
   }
 
   .letter-m,
   .letter-f {
     position: static;
-    font-size: 49vw;
+    font-size: calc(76vw - 23px);
     transform: none;
-    flex: 1;
   }
 
   .letter-outlined {

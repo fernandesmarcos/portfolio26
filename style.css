@@ -173,6 +173,7 @@ body {
     padding: 50px 10px 10px 10px;
     display: flex;
     flex-direction: column;
+    overflow: visible;
   }
 
   .header {
@@ -207,17 +208,24 @@ body {
 
   .monogram {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    height: calc(62.6vw - 19px);
     margin-top: auto;
-    margin-left: -8px;
-    margin-right: -16px;
+    overflow: visible;
   }
 
-  .letter-m,
+  .letter-m {
+    position: absolute;
+    left: -0.03em;
+    bottom: 0;
+    font-size: calc(76.3vw - 23px);
+    transform: none;
+  }
+
   .letter-f {
-    position: static;
-    font-size: calc(76vw - 23px);
+    position: absolute;
+    right: -0.06em;
+    bottom: 0;
+    font-size: calc(76.3vw - 23px);
     transform: none;
   }
 
